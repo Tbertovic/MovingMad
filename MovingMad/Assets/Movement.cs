@@ -16,25 +16,26 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool IsGrounded()
+        {
+            return GetComponent<Rigidbody>().velocity.y == 0;
+        }
         if (Input.GetKey(KeyCode.A))
         {
        
             transform.position += (Vector3.left * speed) * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else  if (Input.GetKey(KeyCode.D))
         {
 
             transform.position += (Vector3.right * speed) * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.W))
+         if (Input.GetKey(KeyCode.W))
         {
 
-            transform.position += (Vector3.up * speed) * Time.deltaTime;
+            transform.position += (Vector3.up * speed * 5) * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.S))
-        {
 
-            transform.position += (Vector3.down * speed) * Time.deltaTime;
-        }
+     
     }
 }
