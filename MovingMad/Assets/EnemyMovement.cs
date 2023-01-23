@@ -14,6 +14,6 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         
-        transform.position += (Vector3.left * 0.5) * Time.deltaTime;
+        transform.position += (Vector3.left * 0.5F) * Time.deltaTime;
     }
 }
