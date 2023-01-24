@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text CounterTimer;
+    [Header("Component")]
+    public Text timer;
     public int framecounter = 0;
     public int counter = 0;
+    public int timeScore;
     void Start()
     {
-        CounterTimer.text = "among ";
     }
  
 
@@ -21,12 +22,13 @@ public class Timer : MonoBehaviour
     {
         framecounter = framecounter + 1;
   
-        if (framecounter >= 60)
+        if (framecounter >= 360)
         {
             counter++;
             framecounter = 0;
         }
       
-        CounterTimer.text = counter.ToString();
+        timer.text = counter.ToString();
+        timeScore = int.Parse(timer.text);
     }
 }
