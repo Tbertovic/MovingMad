@@ -22,7 +22,7 @@ public class Timer : MonoBehaviour
     {
         framecounter = framecounter + 1;
   
-        if (framecounter >= 360)
+        if (framecounter >= 60)
         {
             counter++;
             framecounter = 0;
