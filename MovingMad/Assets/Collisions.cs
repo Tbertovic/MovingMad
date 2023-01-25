@@ -6,7 +6,7 @@ public class Collisions : MonoBehaviour
 {
     private void OnCollisionEnter2d(Collision2D collision)
     {
-        if (collision.gameObject.name == "grass_sprite")
+        if (collision.gameObject.name == "slime_sprite")
         {
             Debug.Log("you got hit");
         }
