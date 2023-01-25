@@ -20,6 +20,8 @@ public class CameraFollow : MonoBehaviour
     {
         xMin = mapBounds.bounds.min.x;
         xMax = mapBounds.bounds.max.x;
+        //xMin = -4.5f;
+        //xMin = 12;
         yMin = mapBounds.bounds.min.y;
         yMax = mapBounds.bounds.max.y;
         mainCam = GetComponent<Camera>();
